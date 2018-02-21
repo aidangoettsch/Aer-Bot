@@ -1,0 +1,31 @@
+{
+  "bot": {
+    "token": "MTY5NjE3MzE2ODY5NDM5NDg4.C1wgOQ.4iNi1IbPV3wMdszJD1FVxufdifc"
+  },
+  "behavior": {
+    "guilds": {
+      "160891109231296512": {
+        "commands": {
+          "prefix": "-",
+          "help": {
+            "usageName": "help"
+          },
+          "ping": {
+            "usageName": "ping"
+          }
+        }
+      },
+      "235520274374721536": {
+        "commands": {
+          "prefix": "-",
+          "help": {
+            "usageName": "help"
+          },
+          "ping": {
+            "usageName": "ping"
+          }
+        }
+      }
+    }
+  }
+}

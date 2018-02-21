@@ -1,0 +1,9 @@
+{
+  "name": "AerBot",
+  "version": "0.1.0",
+  "main": "src/app.js",
+  "repository": "https://github.com/yayes2/Aer-Bot",
+  "author": "Aidan Goettsch",
+  "license": "MIT",
+  "private": true
+}

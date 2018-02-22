@@ -1,0 +1,10 @@
+[
+  {
+    "name": "role",
+    "desc": "Assign a role to yourself."
+  },
+  {
+    "name": "droprole",
+    "desc": "Remove a role from yourself."
+  }
+]

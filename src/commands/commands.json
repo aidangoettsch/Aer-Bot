@@ -1,10 +1,14 @@
-[
-  {
-    "name": "role",
-    "desc": "Assign a role to yourself."
+{
+  "help": {
+    "name": "help",
+    "args": "[command]",
+    "desc":
+      "View further info on a command. Prints this message if no command is given."
   },
-  {
-    "name": "droprole",
-    "desc": "Remove a role from yourself."
+  "test": {
+    "name": "help",
+    "args": "[command]",
+    "desc":
+      "View further info on a command. Prints this message if no command is given."
   }
-]
+}

@@ -1,5 +1,6 @@
 const discordJS = require('discord.js')
 const commands = require('./commands.json')
+const version = require('../../package.json').version
 
 module.exports = {
   unknownCommand: new discordJS.RichEmbed({
@@ -9,25 +10,17 @@ module.exports = {
     color: 2550255
   }),
   help: new discordJS.RichEmbed({
-    embed: {
-      title: '`Help`',
-      description: 'Use `~help [command]` for more information on a command.',
-      color: 2798387,
-      footer: {
-        text: 'ÆR Bot | v0.1.0'
-      },
-      fields: [
-        {
-          name: '`~role [role]`',
-          value: 'Assign a role to yourself.',
-          inline: true
-        },
-        {
-          name: '`~droprole [role]`',
-          value: 'Remove a role from yourself.',
-          inline: true
-        }
-      ]
-    }
+    title: '`Help`',
+    description: 'Use `~help [command]` for more information on a command.',
+    color: 2550255,
+    footer: {
+      text: 'ÆR Bot | v' + version
+    },
+    fields: Object.keys(commands).map(k => {
+      return {
+        name: k,
+        value: commands[k].desc
+      }
+    })
   })
 }
